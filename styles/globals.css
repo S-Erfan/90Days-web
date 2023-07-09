@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "kalemeh";
+  src: url("/fonts/KalamehWeb/eot/KalamehWeb_Regular.eot");
+  src: local("kalemeh-Regular"),
+    url("/fonts/KalamehWeb/eot/KalamehWeb_Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/KalamehWeb/woff2/KalamehWeb_Regular.woff2") format("woff2"),
+    url("/fonts/KalamehWeb/woff/KalamehWeb_Regular.woff") format("woff"),
+    url("/fonts/KalamehWeb/ttf/KalamehWeb_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "kalemeh";
+  src: url("/fonts/KalamehWeb/eot/KalamehWeb_Bold.eot");
+  src: local("kalemeh-Bold"),
+    url("/fonts/KalamehWeb/eot/KalamehWeb_Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/KalamehWeb/woff2/KalamehWeb_Bold.woff2") format("woff2"),
+    url("/fonts/KalamehWeb/woff/KalamehWeb_Bold.woff") format("woff"),
+    url("/fonts/KalamehWeb/ttf/KalamehWeb_Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "kalemeh";
+  src: url("/fonts/KalamehWeb/eot/KalamehWeb_Black.eot");
+  src: local("kalemeh-Black"),
+    url("/fonts/KalamehWeb/eot/KalamehWeb_Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/KalamehWeb/woff2/KalamehWeb_Black.woff2") format("woff2"),
+    url("/fonts/KalamehWeb/woff/KalamehWeb_Black.woff") format("woff"),
+    url("/fonts/KalamehWeb/ttf/KalamehWeb_Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "kalemeh";
 }
