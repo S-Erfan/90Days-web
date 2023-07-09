@@ -20,7 +20,8 @@
   font-family: "kalemeh";
   src: url("/fonts/KalamehWeb/eot/KalamehWeb_Bold.eot");
   src: local("kalemeh-Bold"),
-    url("/fonts/KalamehWeb/eot/KalamehWeb_Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/KalamehWeb/eot/KalamehWeb_Bold.eot?#iefix")
+      format("embedded-opentype"),
     url("/fonts/KalamehWeb/woff2/KalamehWeb_Bold.woff2") format("woff2"),
     url("/fonts/KalamehWeb/woff/KalamehWeb_Bold.woff") format("woff"),
     url("/fonts/KalamehWeb/ttf/KalamehWeb_Bold.ttf") format("truetype");
@@ -41,6 +42,10 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

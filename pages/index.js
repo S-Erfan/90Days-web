@@ -11,11 +11,11 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
+        {/* <AboutSection />
         <TargetSection />
-        <FeatureSection />
+        <FeatureSection /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

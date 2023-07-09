@@ -90,7 +90,7 @@ const TargetSection = () => {
             </h5>
           </div>
           <div className="mt-[70px] ">
-            <div class="flex flex-wrap justify-center items-center -m-[20px]">
+            <div className="flex flex-wrap justify-center items-center -m-[20px]">
               {challenge.map((item) => (
                 <div key={item.id} className="w-full lg:w-1/3 p-[30px]">
                   <div className="flex flex-col justify-center items-center gap-2 ">
