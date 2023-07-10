@@ -7,26 +7,39 @@ const Footer = () => {
   return (
     <>
       <footer className="w-full bg-darkBlue relative">
-        <div className="w-full h-[93px] bg-white bg-opacity-[8%] absolute top-0 left-0 z-[1] " >
-
+        <div className="w-full h-[80px] md:h-[93px] bg-white bg-opacity-[8%] absolute top-0 left-0 z-[1] ">
+          <div className="w-full h-full flex lg:hidden justify-end items-center text-white ">
+            <span className="flex justify-start items-center gap-2 bg-darkBlue h-full py-[24px] px-4 relative z-[2]">
+              <span className="text-[30px] font-bold">90 ROUZ</span>
+              <Image
+                src={"/logo.png"}
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-[35px] mb-1 h-auto object-contain"
+              />
+            </span>
+          </div>
         </div>
 
         <section className="pb-[86px] border-b border-white/20 ">
           <div className="container">
-            <div className="flex justify-between items-center gap-4">
-              <div className="flex flex-col gap-5 justify-start items-start">
-                <span className="py-[24px] text-white mb-7 text-[25px] font-bold">خبرنامه</span>
+            <div className="flex justify-between flex-col flex-wrap md:flex-row items-start lg:items-center gap-7 lg:gap-4">
+              <div className="w-full md:w-5/6 lg:w-4/6 xl:w-fit flex flex-col gap-5 justify-start items-start">
+                <span className="py-[24px] text-white  lg:mb-7 text-[25px] font-bold">
+                  خبرنامه
+                </span>
                 <p className="text-base text-white ">
                   برای با خبر شدن از آخرین پروژه ها و اخبار، لطفا ایمیل خود را
                   برای ما ارسال کنید.
                 </p>
-                <div className="flex justify-start items-stretch">
+                <div className="flex justify-start items-stretch w-full">
                   <button className="px-3 py-3 bg-yellowMain text-[#23212A] text-base">
                     ارسال
                   </button>
                   <input
                     type="email"
-                    className="flex-1 min-w-[300px] w-full bg-transparent border border-[#4E5683] outline-none border-r-0 text-white px-3 py-2 "
+                    className="flex-1 lg:min-w-[300px] w-full bg-transparent border border-[#4E5683] outline-none border-r-0 text-white px-3 py-2 "
                     placeholder="ایمیل خود را وارد نمایید"
                   />
                 </div>
@@ -92,7 +105,9 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col gap-5 justify-start items-start text-[18px]">
-                <span className="py-[24px] text-white mb-7 text-[25px] font-bold">ارتباط با ما</span>
+                <span className="lg:py-[24px] text-white lg:mb-7 text-[25px] font-bold">
+                  ارتباط با ما
+                </span>
                 <div className="flex justify-start items-start gap-1 text-white">
                   <Location size={26} />
                   <div className="flex flex-col gap-2">
@@ -114,7 +129,9 @@ const Footer = () => {
               </div>
 
               <div className="flex flex-col gap-2 text-[18px] text-white ">
-                <span className="py-[24px] text-white mb-7 text-[25px] font-bold">لینک ها</span>
+                <span className="lg:py-[24px] text-white lg:mb-7 text-[25px] font-bold">
+                  لینک ها
+                </span>
                 <Link href={"/"}>درباره ما</Link>
                 <Link href={"/"}>تیم 90 روز</Link>
                 <Link href={"/"}>پروژه ها</Link>
@@ -122,9 +139,9 @@ const Footer = () => {
                 <Link href={"/"}>فرم تماس</Link>
               </div>
 
-              <div className="flex flex-col gap-5 text-white">
-                <span className="flex justify-start items-center gap-2 mb-7 bg-darkBlue h-full py-[24px] px-4 relative z-[2]">
-                  <span className="text-[30px] font-bold" >90 ROUZ</span>
+              <div className="flex flex-row mt-4 lg:mt-0 md:flex-col gap-5 text-white">
+                <span className="hidden lg:flex justify-start items-center gap-2 mb-7 bg-darkBlue h-full py-[24px] px-4 relative z-[2]">
+                  <span className="text-[30px] font-bold">90 ROUZ</span>
                   <Image
                     src={"/logo.png"}
                     alt=""
@@ -138,7 +155,7 @@ const Footer = () => {
                     <span className="">Email</span>
                     <span className="block">Admin@90rouz.ir</span>
                   </div>
-                  <div className="w-[63px] h-[63px] shadow-md bg-[#111C55] border border-[#273270] rounded-full grid place-items-center">
+                  <div className="w-[45px] h-[45px] md:w-[63px] md:h-[63px] shadow-md bg-[#111C55] border border-[#273270] rounded-full grid place-items-center">
                     <Sms size={18} className="text-yellowMain " />
                   </div>
                 </div>
@@ -148,7 +165,7 @@ const Footer = () => {
                     <span className="">Call Us </span>
                     <span className="block">+98 210000000</span>
                   </div>
-                  <div className="w-[63px] h-[63px] shadow-md bg-[#111C55] border border-[#273270] rounded-full grid place-items-center">
+                  <div className="w-[45px] h-[45px] md:w-[63px] md:h-[63px] shadow-md bg-[#111C55] border border-[#273270] rounded-full grid place-items-center">
                     <Call size={18} className="text-yellowMain " />
                   </div>
                 </div>

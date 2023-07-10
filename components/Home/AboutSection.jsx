@@ -6,12 +6,12 @@ const AboutSection = () => {
     <>
       <section className="w-full h-auto py-[60px] bg-white ">
         <div className="container">
-          <div className="flex justify-between items-center ">
-            <div className="w-1/3 flex flex-col items-start gap-7">
+          <div className="flex justify-between items-center flex-col md:flex-row gap-5">
+            <div className="w-full md:w-2/3 flex flex-col items-start gap-7">
               <span className="border-r-2 border-yellowMain bg-[#E8E8E8]/50 py-[3px] px-[9px] w-fit text-[#474544] text-sm  ">
                 درباره ما
               </span>
-              <h1 className="text-[#474544] text-end text-[35px] font-bold max-w-[440px]">
+              <h1 className="text-[#474544] text-end text-[35px] font-bold">
                 آشنایی با بخش های سایت
               </h1>
               <div className="text-[#717171] text-[20px] [&>p]:text-justify ">
@@ -48,7 +48,7 @@ const AboutSection = () => {
             <Image
               src={"/assets/about.png"}
               alt="intro"
-              className="h-[473px] w-auto object-contain"
+              className="w-full md:w-1/3 h-auto lg:h-[473px] lg:w-auto object-contain"
               width={1000}
               height={1000}
             />

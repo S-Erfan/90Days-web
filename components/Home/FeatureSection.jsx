@@ -33,7 +33,7 @@ const FeatureSection = () => {
           <h4 className="text-[#474544] text-start text-[35px] font-bold mt-2">
             بخش هایی که در آینده به ۹۰ روز اضافه میشوند
           </h4>
-          <div className="flex justify-between items-center gap-[170px] mt-4 ">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-[170px] mt-4 ">
             <div className="w-full flex flex-col items-start gap-10">
               {itemsFeature.map((item) => (
                 <div
@@ -58,7 +58,7 @@ const FeatureSection = () => {
             <Image
               src={"/assets/feather.png"}
               alt="intro"
-              className="h-[423px] w-auto object-contain"
+              className="w-full h-auto xl:h-[423px] xl:w-auto object-contain"
               width={1000}
               height={1000}
             />

@@ -27,7 +27,7 @@ const HeroSection = () => {
                 در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
                 نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
               </p>
-              <button className="bg-yellowMain -mt-2 mx-auto md:-m-6 text-[#23212A] text-base font-bold w-[194px] h-[60px] outline-none border-none shadow-md">
+              <button className="bg-yellowMain -mt-2 mx-auto md:mx-0 md:-mt-6 text-[#23212A] text-base font-bold w-[194px] h-[60px] outline-none border-none shadow-md">
                 بزن بریم
               </button>
             </div>

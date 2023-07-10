@@ -125,12 +125,12 @@ const Header = () => {
         </div>
       </nav>
       <div
-        className={`absolute lg:hidden top-[72px] z-[15] transition-all duration-150 ease-out left-0 ${
+        className={`fixed lg:hidden top-[72px] z-[15] transition-all duration-150 ease-out left-0 ${
           menu ? "h-[calc(100vh-72px)]" : "h-0"
         } overflow-hidden w-full bg-darkBlue `}
       >
-        <div className="container mt-10">
-          <ul className="flex flex-col gap-2">
+        <div className="container w-full h-full mt-10 relative">
+          <ul className="flex flex-col gap-6">
             <li className="w-full text-xl text-white">خانه</li>
             <li className="w-full text-xl text-white">گروه کتاب</li>
             <li className="w-full text-xl text-white">بلاگ سفر</li>
@@ -138,6 +138,17 @@ const Header = () => {
             <li className="w-full text-xl text-white">آکادمی کسب و کار</li>
             <li className="w-full text-xl text-white">همکاری با ما</li>
           </ul>
+
+          <div className=" md:hidden absolute top-[80%] left-0 w-full z-[16]">
+            <div className="flex justify-evenly items-center gap-2">
+              <button className="bg-white text-black text-base font-bold w-[122px] h-[34px] outline-none border-none shadow-md ">
+                ورود
+              </button>
+              <button className="bg-yellowMain text-[#23212A] text-base font-bold w-[122px] h-[34px] outline-none border-none shadow-md ">
+                ثبت نام
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
