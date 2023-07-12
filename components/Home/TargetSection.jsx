@@ -1,80 +1,7 @@
+import { challenge } from "@/utils/data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
-const challenge = [
-  {
-    id: 1,
-    name: "هنر",
-    icon: "/assets/vectors/pen.png",
-    path: "/art-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 2,
-    name: "کتاب",
-    icon: "/assets/vectors/book.png",
-    path: "/book-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 3,
-    name: "ورزش",
-    icon: "/assets/vectors/sport.png",
-    path: "/sport-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 5,
-    name: "زبان",
-    icon: "/assets/vectors/language.png",
-    path: "/language-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 4,
-    name: "موسیقی",
-    icon: "/assets/vectors/music.png",
-    path: "/music-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 6,
-    name: "دنیای دیجیتال",
-    icon: "/assets/vectors/digital.png",
-    path: "/digital-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 8,
-    name: "قلمرو ناشناخته",
-    icon: "/assets/vectors/map.png",
-    path: "/seminar-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 9,
-    name: "آکادمی کسب و کار",
-    icon: "/assets/vectors/mony.png",
-    path: "/seminar-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-  {
-    id: 7,
-    name: "مسافرت",
-    icon: "/assets/vectors/travel.png",
-    path: "/tourist-section",
-    content:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها",
-  },
-];
 
 const TargetSection = () => {
   return (
@@ -96,7 +23,7 @@ const TargetSection = () => {
                   key={item.id}
                   className="w-full md:w-1/2 lg:w-1/3 p-[30px]"
                 >
-                  <div className="flex flex-col justify-center items-center gap-2 ">
+                  <Link href={`/blogs/${item.slug}`} className="flex flex-col justify-center items-center gap-2 ">
                     <Image
                       src={item.icon}
                       alt={item.name}
@@ -110,7 +37,7 @@ const TargetSection = () => {
                     <p className="text-center text-[#666C89] max-w-[200px]">
                       {item.content}
                     </p>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
